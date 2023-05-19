@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fiturcall">
+
+    <TextView
+        android:id="@+id/contacttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contactImage"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="26dp"
+        android:text="00:03"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/contactImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:radius="1000dp"
+        android:src="@drawable/ector1" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactImage"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:text="Dr. Cammelia"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/endcallIcon"
+        android:layout_below="@+id/contactName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/endcall" />
+
+</RelativeLayout>

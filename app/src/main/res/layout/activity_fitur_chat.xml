@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/profilheader">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/profil" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/unameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Cammelia"
+            android:textSize="20sp"
+            android:layout_marginTop="9dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+            <TextView
+                android:id="@+id/messagepsikologView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderbg"
+                android:padding="8dp"
+                android:layout_marginStart="10dp"
+                android:text="Hallo! Ada yang bisa dibantu?"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp">
+            <TextView
+                android:id="@+id/messageuserView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borderbg"
+                android:padding="8dp"
+                android:layout_marginStart="230dp"
+                android:text="Hai! Seperti ini dok ..."/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:hint="Masukkan Pesan" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Send"
+            android:backgroundTint="@color/lylac"
+            android:layout_marginStart="300dp"/>
+
+        <LinearLayout
+            android:id="@+id/keyboardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/messageEditText"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
