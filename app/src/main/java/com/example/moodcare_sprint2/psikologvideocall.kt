@@ -13,7 +13,7 @@ class psikologvideocall : AppCompatActivity() {
         val nextbtn: Button = findViewById(R.id.nextButton)
 
         nextbtn.setOnClickListener {
-            val intent = Intent(this, fiturcall::class.java)
+            val intent = Intent(this, fiturvideocall::class.java)
             startActivity(intent)
         }
     }
